@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CERO PATATERO</title>
+        <!--añadir versión solo chip-->
+        <link rel="icon" type="image/x-icon" href="/media/svg/cero-patatero-logo.svg">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Londrina+Solid:wght@100;300;400;900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md bg-body-tertiary"> <!--BUSCAR FORMA DE HACERLO STICKY CON BOOTSTRAP-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/media/svg/cero-patatero-logo.svg" alt="Logo" width="150" height="auto" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item border-top">
+                        <a class="nav-link" aria-current="page" href="/quienes-somos.html">QUIÉNES SOMOS</a>
+                        </li>
+                        <li class="nav-item border-top">
+                        <a class="nav-link" href="#carta">NUESTRA CARTATA</a>
+                        </li>
+                        <li class="nav-item border-top">
+                        <a class="nav-link" href="#resenas">RESEÑAS</a>
+                        </li>
+                        <li class="nav-item border-top border-bottom">
+                            <a class="nav-link" href="#catering">CATERING & EVENTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div>
+                <div>
+                    <!--INSERTAR IMAGEN-->
+                </div>
+                <div class="container text-center">
+                    <h1>PATATAS QUE TE LLEGAN A LA PATATA</h1>
+                </div>
+            </div>
+        </header>
+
+        <section id="novedades">
+            <div class="container text-center">
+                <h2>NOVEDADES</h2>
+            </div>
+            <div class="box round">
+                <div class="container text-center">
+                    <p>Crisps or</p>
+                    <h3>CHIPS</h3>
+                </div>
+                <img src="https://placehold.co/600x400" alt="chips">
+            </div>
+            
+        </section>
+
+        <section id="carta">
+            <div class="container text-center">
+                <h2>NUESTRA CARTATA</h2>
+            </div>
+            <div class="container text-center menu round"> <!--hacerlo con cards de bootstrap y cambiar un poco el css (pq lo hice sin lo de los cards)-->
+                <a class="navbar-brand" href="#">
+                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <h3>French fries</h3>
+                <p>3€</p>
+            </div>
+            
+        
+        </section>
+
+        <section id="resenas">
+            <div class="container text-center">
+                <h2>RESEÑAS</h2>
+            </div>
+        
+        </section>
+
+        <!--POLAROIDS AQUI-->
+
+        <section id="catering">
+            <div class="container text-center">
+                <h2>CATERING & EVENTOS</h2>
+            </div>
+
+            <form class="round">
+                <h3 class="text-center">¡Ponte en contacto con nosotros para tu próximo evento!</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y Apellidos</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlSelect1">Tipo de evento</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Breve descripción del evento</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </form>
+        </section>
+
+        <section id="ubicacion">
+            <div class="container text-center">
+                <h2>UBICACIÓN</h2>
+                <div>
+                    <!--AÑADIR MAPA-->
+                </div>
+                <p>CALLE</p>
+            </div>
+        
+        </section>
+
+        <footer>
+            <!--FINISH THIS OFF-->
+            <a class="aa" href="#">
+                <img src="/media/svg/cero-patatero-logo.svg" alt="Logo" width="100%" height="auto" class="d-inline-block align-text-top">
+            </a>
+            <div class="" id="">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/quienes-somos.html">QUIÉNES SOMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carta">NUESTRA CARTATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resenas">RESEÑAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#catering">CATERING & EVENTOS</a>
+                </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
