@@ -35,23 +35,6 @@ section, header, footer {
     padding: 2em;
 }
 
-header {
-    background-color: var(--blue);
-}
-
-header h1 {
-    font-family: "Truculenta", serif;
-    font-optical-sizing: auto;
-    font-weight: 700 !important;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-
-    color: var(--white);
-    font-size: 5em !important;
-}
-
-
-
 .navbar {
     font-family: "Kulim Park", serif;
     font-weight: 700;
@@ -90,6 +73,21 @@ a.nav-link {
     font-size: 2em;
 }
 
+header {
+    background-color: var(--blue);
+}
+
+header h1 {
+    font-family: "Truculenta", serif;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: var(--white);
+    font-size: 5em !important;
+}
+
 .round {
     border-radius: 30px !important;
 }
@@ -116,30 +114,7 @@ a.nav-link {
 
 }
 
-#carta .cartataBackground {
-    background-color: var(--blue);
-    margin-top: 2em;
-    border-radius: 25px !important;
-}
-
-#carta .card-background {
-    background-color: var(--blue);
-    border: none !important;
-    border-radius: 0 !important;
-    position: relative;
-}
-
-#carta .card-background::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    border-bottom: 2px solid var(--yellow);
-}
-
-
+/* CARTATA */
 #carta h3, #carta p {
     font-weight: 900;
 }
@@ -150,6 +125,52 @@ a.nav-link {
 
 #carta p {
     color: var(--yellow);
+}
+
+#carta .cartataBackground {
+    background-color: var(--blue);
+    margin-top: 2em;
+    border-radius: 25px !important;
+}
+
+#carta .card-background {
+    background-color: transparent;
+    border: none !important;
+    border-radius: 0 !important;
+    position: relative;
+    padding-top: 5em;
+    overflow: hidden;
+}
+
+#carta .card-background::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: 3px solid var(--yellow);
+}
+
+.imgComida {
+    z-index: 2;
+    transition: transform 0.3s ease;
+    /* max-height: 150px;
+    object-fit: contain; */
+}
+
+#carta .card-background:hover .imgComida {
+    transform: translateY(-20%) scale(1.1);
+}
+
+.imgCirculo {
+    width: 150px !important;
+    height: 150px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    position: absolute;
+    z-index: 1;
 }
 
 #resenas {
@@ -206,6 +227,7 @@ a.nav-link {
     object-fit: cover;
     object-position: center;
     box-sizing: border-box;
+    border-radius: 25px;
 }
 
 /* .swiper-slide-active {
