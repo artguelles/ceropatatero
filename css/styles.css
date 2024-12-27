@@ -116,9 +116,29 @@ a.nav-link {
 
 }
 
-#carta .menu {
+#carta .cartataBackground {
     background-color: var(--blue);
+    margin-top: 2em;
+    border-radius: 25px !important;
 }
+
+#carta .card-background {
+    background-color: var(--blue);
+    border: none !important;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+#carta .card-background::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: 2px solid var(--yellow);
+}
+
 
 #carta h3, #carta p {
     font-weight: 900;
@@ -130,6 +150,89 @@ a.nav-link {
 
 #carta p {
     color: var(--yellow);
+}
+
+#resenas {
+    padding: 0;
+}
+
+/* SLIDERSHOW */
+.polaroids {
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    padding: 3.5rem 0 5rem 0;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    overflow: visible;
+    /* overflow: hidden; */
+    /* filter: grayscale(100%); */
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.swiper-slide:nth-child(2n) {
+    transform: rotate(-7deg);
+}
+
+.swiper-slide:nth-child(2n + 1) {
+    transform: rotate(7deg);
+}
+
+.swiper-slide:nth-child(3n + 1) img {
+    border: 8px solid var(--blue);
+}
+
+.swiper-slide:nth-child(3n + 2) img {
+    border: 8px solid var(--red);
+}
+
+.swiper-slide:nth-child(3n + 3) img {
+    border: 8px solid var(--yellow);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+}
+
+/* .swiper-slide-active {
+    transform: none;
+} */
+
+.swiper-slide-active:nth-child(2n),
+.swiper-slide-active:nth-child(2n + 1) {
+    transform: rotate(0) scale(1.35);
+    z-index: 1;
+}
+
+/* PUNTITOS */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--red);
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    height: 12px;
+    background-color: var(--red);
+    opacity: 1; 
+    border-radius: 50px;
 }
 
 #catering form {
@@ -172,4 +275,16 @@ footer {
 footer a {
     color: var(--white);
     font-weight: 500;
+}
+
+
+/* cambiar luego la medida */
+@media (min-width: 670px) {
+    .swiper {
+        padding: 3.5rem 0 6.5rem 0;
+    }
+    .swiper-slide {
+        width: 300px;
+        height: 300px;
+    }
 }

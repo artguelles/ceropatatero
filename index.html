@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CERO PATATERO</title>
         <!--añadir versión solo chip-->
-        <link rel="icon" type="image/x-icon" href="/media/svg/cero-patatero-logo.svg">
+        <link rel="icon" type="image/x-icon" href="media/svg/cero-patatero-logo.svg">
+
+        <!-- SWIPER-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +21,7 @@
         <nav class="navbar navbar-expand-md bg-body-tertiary"> <!--BUSCAR FORMA DE HACERLO STICKY CON BOOTSTRAP-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/media/svg/cero-patatero-logo.svg" alt="Logo" width="150" height="auto" class="d-inline-block align-text-top">
+                    <img src="media/svg/cero-patatero-logo.svg" alt="Logo" width="150" height="auto" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,25 +74,110 @@
             <div class="container text-center">
                 <h2>NUESTRA CARTATA</h2>
             </div>
-            <div class="container text-center menu round"> <!--hacerlo con cards de bootstrap y cambiar un poco el css (pq lo hice sin lo de los cards)-->
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
-                <h3>French fries</h3>
-                <p>3€</p>
+
+            <div class="container text-center cartataBackground">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 card-background">
+                        <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Frech fries</h3>
+                          <p class="card-text">3€</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-background">
+                          <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Frech fries</h3>
+                            <p class="card-text">3€</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-background">
+                          <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Frech fries</h3>
+                            <p class="card-text">3€</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-background">
+                          <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Frech fries</h3>
+                            <p class="card-text">3€</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-background">
+                          <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Frech fries</h3>
+                            <p class="card-text">3€</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-background">
+                          <img src="media/svg/carta/img1.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Frech fries</h3>
+                            <p class="card-text">3€</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-        
+
         </section>
 
         <section id="resenas">
             <div class="container text-center">
                 <h2>RESEÑAS</h2>
             </div>
-        
-        </section>
 
-        <!--POLAROIDS AQUI-->
+            <!--POLAROIDS AQUI-->
+            <div class="polaroids">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/svg/polaroids/img1.jpg" alt="image">
+                        </div>
+                    </div>
+                    <!-- PUNTITOS -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
         <section id="catering">
             <div class="container text-center">
@@ -138,7 +227,7 @@
         <footer>
             <!--FINISH THIS OFF-->
             <a class="aa" href="#">
-                <img src="/media/svg/cero-patatero-logo.svg" alt="Logo" width="100%" height="auto" class="d-inline-block align-text-top">
+                <img src="media/svg/cero-patatero-logo.svg" alt="Logo" width="100%" height="auto" class="d-inline-block align-text-top">
             </a>
             <div class="" id="">
                 <ul class="navbar-nav">
@@ -158,6 +247,17 @@
             </div>
         </footer>
 
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- SWIPER-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- JAVASCRIPT -->
+        <script src="js/script.js"></script>
+
     </body>
 </html>
