@@ -310,3 +310,13 @@ footer a {
         height: 300px;
     }
 }
+
+/* Irene */
+html {
+    cursor: url("../media/cursor.png"), auto;
+}
+
+#model{
+    width: 100vw;
+    height: 50vh;
+}
