@@ -1,4 +1,4 @@
-
+/*BASE MARIVI*/
 :root {
     --blue: #244BA5;
     --yellow: #FEC67C;
@@ -173,11 +173,11 @@ header h1 {
     z-index: 1;
 }
 
-#resenas {
+#polaroids {
     padding: 0;
 }
 
-/* SLIDERSHOW */
+/* SLIDESHOW */
 .polaroids {
     width: 100%;
 }
@@ -257,6 +257,32 @@ header h1 {
     border-radius: 50px;
 }
 
+/*MARIVI*/
+
+.pic img {
+    border-radius: 100px;
+    border: solid var(--white) 10px;
+}
+
+.review {
+    background-color: var(--yellow);
+    padding: 1em;
+    padding-top: 2em;
+    margin-top: -1.5em;
+}
+
+.review h3 {
+    font-weight: 700;
+}
+
+.fa-star {
+    color: var(--red);
+}
+
+.text-review {
+    margin-top: 1em;
+}
+
 #catering form {
     background-color: var(--yellow);
     padding: 2em;
@@ -319,4 +345,11 @@ html {
 #model{
     width: 100vw;
     height: 50vh;
+}
+
+/* MARIVI (ARREGLOS DE COSAS)*/
+
+#model-div {
+    width: 100%;
+    height: auto;
 }
