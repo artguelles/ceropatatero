@@ -1,6 +1,7 @@
 /*BASE MARIVI*/
 :root {
     --blue: #244BA5;
+    --gradientblue: #244ba581;
     --yellow: #FEC67C;
     --red: #F0645B;
     --black: #000000;
@@ -74,7 +75,20 @@ a.nav-link {
 }
 
 header {
-    background-color: var(--blue);
+    /*background-color: var(--blue);*/
+    background-image: url(/media/img/header-pic.jpg);
+    background-size: cover;
+    background-color: var(--gradientblue);
+}
+
+header img {
+    width: 100%;
+
+}
+
+header > div {
+    background-color: var(--gradientblue);
+
 }
 
 header h1 {
