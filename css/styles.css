@@ -280,22 +280,53 @@ header h1 {
 }
 
 .review {
-    background-color: var(--yellow);
     padding: 1em;
     padding-top: 2em;
     margin-top: -1.5em;
 }
 
 .review h3 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.fa-star {
-    color: var(--red);
+.review div:last-child h3 {
+    font-size: 1.2em;
 }
 
 .text-review {
     margin-top: 1em;
+}
+
+#rev-yellow {
+    background-color: var(--yellow);
+}
+
+#rev-yellow .fa-star, #rev-yellow div:last-child p {
+    color: var(--red);
+}
+
+#rev-red {
+    background-color: var(--red);
+}
+
+#rev-red p, #rev-red h3 {
+    color: var(--white);
+} 
+
+#rev-red .fa-star, #rev-red div:last-child p {
+    color: var(--yellow);
+}
+
+#rev-blue {
+    background-color: var(--blue);
+}
+
+#rev-blue p, #rev-blue h3 {
+    color: var(--yellow);
+} 
+
+#rev-blue .fa-star, #rev-blue div:last-child p {
+    color: var(--red);
 }
 
 #catering form {
