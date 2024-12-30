@@ -145,6 +145,7 @@ header h1 {
     background-color: var(--blue);
     margin-top: 2em;
     border-radius: 25px !important;
+    padding-bottom: 2em;
 }
 
 #carta .card-background {
