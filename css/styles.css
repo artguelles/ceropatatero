@@ -187,11 +187,14 @@ header h1 {
     z-index: 1;
 }
 
+
+
+/* SLIDESHOW */
+
 #polaroids {
     padding: 0;
 }
 
-/* SLIDESHOW */
 .polaroids {
     width: 100%;
 }
@@ -275,7 +278,7 @@ header h1 {
 
 .pic img {
     border-radius: 100px;
-    border: solid var(--white) 10px;
+    border: solid var(--white) 7px;
     object-fit: cover;
 }
 
@@ -301,8 +304,12 @@ header h1 {
     background-color: var(--yellow);
 }
 
-#rev-yellow .fa-star, #rev-yellow div:last-child p {
+#rev-yellow .fa-star, #rev-yellow div:last-child a {
     color: var(--red);
+}
+
+#rev-yellow div:last-child a {
+    text-decoration: none;
 }
 
 #rev-red {
@@ -313,8 +320,12 @@ header h1 {
     color: var(--white);
 } 
 
-#rev-red .fa-star, #rev-red div:last-child p {
+#rev-red .fa-star, #rev-red div:last-child a {
     color: var(--yellow);
+}
+
+#rev-red div:last-child a {
+    text-decoration: none;
 }
 
 #rev-blue {
@@ -325,8 +336,12 @@ header h1 {
     color: var(--yellow);
 } 
 
-#rev-blue .fa-star, #rev-blue div:last-child p {
+#rev-blue .fa-star, #rev-blue div:last-child a {
     color: var(--red);
+}
+
+#rev-blue div:last-child a {
+    text-decoration: none;
 }
 
 #catering form {
@@ -362,11 +377,11 @@ header h1 {
 }
 
 footer {
-    background-color: var(--yellow);
+    background-color: var(--blue);
     /*mientras cambiamos el color a blanco*/
 }
 
-footer a {
+footer li {
     color: var(--white);
     font-weight: 500;
 }
