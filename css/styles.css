@@ -276,6 +276,7 @@ header h1 {
 .pic img {
     border-radius: 100px;
     border: solid var(--white) 10px;
+    object-fit: cover;
 }
 
 .review {
