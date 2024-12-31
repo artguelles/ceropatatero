@@ -145,7 +145,7 @@ header h1 {
     background-color: var(--blue);
     margin-top: 2em;
     border-radius: 25px !important;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 #carta .card-background {
@@ -170,8 +170,9 @@ header h1 {
 .imgComida {
     z-index: 2;
     transition: transform 0.3s ease;
-    /* max-height: 150px;
-    object-fit: contain; */
+    /* max-height: 150px; */
+    height: 150px;
+    object-fit: contain;
 }
 
 #carta .card-background:hover .imgComida {
@@ -188,6 +189,32 @@ header h1 {
     z-index: 1;
 }
 
+/* MODALES */
+.modalFondo {
+    background-color: var(--red) !important;
+}
+
+.modalTitulo {
+    color: var(--white);
+}
+
+.modalTexto p {
+    color: var(--white);
+}
+
+.modalCerrar {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    border: none !important;
+}
+
+.modalFooter {
+    border-top: 3px solid var(--yellow) !important;
+}
+
+.modalHeader {
+    border-bottom: 3px solid var(--yellow) !important;
+}
 
 
 /* SLIDESHOW */
@@ -411,7 +438,7 @@ html {
 
 #mapa-div{
     width: 80vw;
-    height: 80vh;
+    height: 40vh;
     margin: 0 auto;
     border-width: 8px;
     border-style: solid;
