@@ -128,6 +128,8 @@ header h1 {
 
 }
 
+/* XIANG */
+
 /* CARTATA */
 #carta h3, #carta p {
     font-weight: 900;
@@ -192,6 +194,8 @@ header h1 {
 /* MODALES */
 .modalFondo {
     background-color: var(--red) !important;
+    border-radius: 30px !important;
+    margin: 0 1.5rem;
 }
 
 .modalTitulo {
@@ -216,6 +220,10 @@ header h1 {
     border-bottom: 3px solid var(--yellow) !important;
 }
 
+.card-text-azul {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
 /* SLIDESHOW */
 
