@@ -128,9 +128,11 @@ header h1 {
 }
 
 #novedades img {
-    width: 150px;
+    width: 115px;
     height: auto;
     transform: translatey(-100px);
+    position: absolute;
+    right: 2em;
 }
 
 /* XIANG */
@@ -172,6 +174,11 @@ header h1 {
     transform: translateX(-50%);
     width: 50%;
     border-bottom: 3px solid var(--yellow);
+}
+
+#carta button {
+    font-family: "Kulim Park", serif;
+    /*SE ESTABA PONIENDO LA DE POR DEFECTO SO- AÑADÍ ESTO -MARIVI*/
 }
 
 .imgComida {
@@ -304,6 +311,11 @@ header h1 {
 }
 
 /* FAQ */
+#FAQ {
+    padding-top: 0;
+    /*AÑADI ESTO PARA QUE NO QUEDE TANTO ESPACIO -MARIVI*/
+}
+
 .h3Faq {
     font-family: "Kulim Park", serif;
     font-weight: 700;
