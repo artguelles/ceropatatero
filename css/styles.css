@@ -125,7 +125,12 @@ header h1 {
     width: 100%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
 
+#novedades img {
+    width: 150px;
+    height: auto;
+    transform: translatey(-100px);
 }
 
 /* XIANG */
@@ -206,23 +211,13 @@ header h1 {
     color: var(--white);
 }
 
-.modalCerrar {
-    background-color: var(--blue) !important;
-    color: var(--white) !important;
-    border: none !important;
-}
-
-.modalFooter {
-    border-top: 3px solid var(--yellow) !important;
-}
-
 .modalHeader {
     border-bottom: 3px solid var(--yellow) !important;
 }
 
-.card-text-azul {
-    font-size: 1.1rem;
-    font-weight: bold;
+.iconCerrar {
+    font-size: 1.5rem;
+    color: var(--white);
 }
 
 /* SLIDESHOW */
@@ -245,8 +240,6 @@ header h1 {
     width: 190px;
     height: 190px;
     overflow: visible;
-    /* overflow: hidden; */
-    /* filter: grayscale(100%); */
     transition: transform 0.3s ease;
     display: flex;
     justify-content: center;
@@ -308,6 +301,68 @@ header h1 {
     background-color: var(--red);
     opacity: 1; 
     border-radius: 50px;
+}
+
+/* FAQ */
+.h3Faq {
+    font-family: "Kulim Park", serif;
+    font-weight: 700;
+    font-style: normal;
+    gap: 15px;
+    justify-content: center !important;
+}
+
+.accordion {
+    --bs-border-radius: 30px;
+}
+
+.acordeonRes {
+    font-family: "Kulim Park", serif;
+    font-size: 0.9em;
+}
+
+.last {
+    --bs-border-radius: 30px;
+}
+
+.acordeonHeader {
+    color: white !important;
+    border-radius: 30px !important;
+    opacity: 1 !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--blue) !important;
+}
+
+.accordion-button {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
+
+.acordeonRes {
+    background-color: var(--yellow) !important;
+}
+
+.acordeonRes2 {
+    background-color: var(--yellow) !important;
+    border-bottom-right-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+}
+
+.accordion-button::after {
+    display: none !important; /* Esto elimina la flecha del acordeón */
+}
+
+/* CARRUSEL */
+@media (min-width: 670px) {
+    .swiper {
+        padding: 3.5rem 0 6.5rem 0;
+    }
+    .swiper-slide {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /*MARIVI*/
@@ -422,18 +477,6 @@ footer li {
     font-weight: 500;
 }
 
-
-/* cambiar luego la medida */
-@media (min-width: 670px) {
-    .swiper {
-        padding: 3.5rem 0 6.5rem 0;
-    }
-    .swiper-slide {
-        width: 300px;
-        height: 300px;
-    }
-}
-
 /* Irene */
 html {
     cursor: url("../media/cursor.png"), auto;
@@ -451,11 +494,13 @@ html {
     border-width: 8px;
     border-style: solid;
     border-color: var(--red);
+    border-radius: 30px;
 }
 
 #mapa{
     width: 100%;
     height: 100%;
+    border-radius: 22px;
 }
 
 .mapa-desc{

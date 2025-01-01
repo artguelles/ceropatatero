@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // CERRAR MENÚ
+    $('.navbar-nav .nav-link').on('click', function () {
+        $('#navbarNav').collapse('hide');
+    });
+
     // CARRUSEL CON SWIPER
     $(document).ready(function () {
         var swiper = new Swiper('.swiper', {
@@ -26,12 +31,8 @@ $(document).ready(function() {
             }
         });
     });
-});
 
-
-//VALIDACIÓN DE FORMULARIO 
-
-$(document).ready(function () {
+    // VALIDAR FORM
     $('form').submit(function (event) {
         event.preventDefault();
 
