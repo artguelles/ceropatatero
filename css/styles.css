@@ -79,6 +79,8 @@ header {
     background-image: url(/media/img/header-pic.jpg);
     background-size: cover;
     background-color: var(--gradientblue);
+    height: 100vh;
+    width: 100%;
 }
 
 header img {
@@ -86,9 +88,25 @@ header img {
 
 }
 
-header > div {
+/*header > div {
     background-color: var(--gradientblue);
 
+}*/
+
+header #gradient{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5.2em;
+    left: 0;
+    background-color: var(--gradientblue);
+    z-index: 4;
+    border-bottom: solid var(--red) 10px;
+}
+
+header .container {
+    position: relative;
+    z-index: 10;
 }
 
 header h1 {
@@ -100,6 +118,7 @@ header h1 {
 
     color: var(--white);
     font-size: 5em !important;
+    margin-top: 0.5em;
 }
 
 .round {
@@ -487,6 +506,17 @@ footer {
 footer li {
     color: var(--white);
     font-weight: 500;
+}
+
+.redes li {
+    font-family: "Kulim Park", serif;
+    font-style: italic;
+    color: var(--white);
+}
+
+.redes .red {
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* Irene */
