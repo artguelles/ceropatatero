@@ -42,8 +42,18 @@ section, header, footer {
     font-style: normal;
 }
 
+/*SI NO FUNCIONA BORRAR DIRECTAMENTE*/
+.navbar-collapse {
+    padding: 8.3em 0;
+    margin: 0 -11.9px -8.8px -11.9px;;
+    background-color: var(--red);
+    width: 100%;
+    position: relative;
+}
+
 .navbar .navbar-collapse .navbar-nav .nav-item a {
-    color: var(--blue);
+    /*color: var(--blue);*/
+    color: var(--yellow);
 }
 
 .navbar-toggler {
@@ -58,7 +68,7 @@ section, header, footer {
 }
 
 .border-top {
-    border-top: var(--yellow) !important;
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important;
 }
 
 .border-bottom {
@@ -127,6 +137,7 @@ header h1 {
 
 #novedades .box {
     background-color: var(--yellow);
+    padding-bottom: 2em;
 }
 
 #novedades p {
@@ -138,6 +149,8 @@ header h1 {
     font-size: 4em;
     font-weight: 900;
     color: var(--red);
+    margin-top: 0.1em;
+    line-height: 0.9;
 }
 
 #novedades img {
@@ -503,9 +516,17 @@ footer {
     /*mientras cambiamos el color a blanco*/
 }
 
+footer img {
+    width: 75%;
+}
+
 footer li {
     color: var(--white);
     font-weight: 500;
+}
+
+footer .navbar-nav .nav-item .nav-link {
+    font-size: 1.5em;
 }
 
 .redes {
