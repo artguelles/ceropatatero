@@ -511,6 +511,51 @@ header h1 {
     --bs-btn-disabled-border-color: var(--red) !important;
 }
 
+/*CAROUSEL INSTRAGRAM*/
+#carousel-ig {
+    padding: 2em;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* Prevent items from stretching */
+    width: 100%; /* Full width for smaller screens */
+}
+
+#carousel-ig h3 {
+    font-weight: 700;
+    color: var(--red);
+}
+
+#carousel-ig a {
+    margin-bottom: 0.5em;
+}
+
+#carousel-ig p {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--white) !important;
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+      width: calc(100% / 3); /* 3 cards visible on tablets and larger */
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+      width: calc(100% / 3); /* Keep 3 cards visible, with partial visibility of adjacent cards */
+    }
+}
+/**/
+
 footer {
     background-color: var(--blue);
     /*mientras cambiamos el color a blanco*/
