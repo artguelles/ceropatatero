@@ -1,0 +1,286 @@
+:root {
+    --blue: #244BA5;
+    --yellow: #FEC67C;
+    --red: #F0645B;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+html {
+    background-color: var(--yellow);
+}
+
+p {
+    font-family: 'Kulim Park';
+}
+
+.mainbox {
+    background-color: var(--orange-color);
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainbox p {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.mainbox span {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+  
+.err {
+    color: var(--red);
+    font-family: "Truculenta";
+    font-size: 11rem;
+    position: absolute;
+    left: 40vw;
+    top: 8%;
+    font-weight: 600;
+}
+  
+.asterisco {
+    position: absolute;
+    font-size: 8rem;
+    left: 43vw;
+    top: 15%;
+    color: var(--bg-color);
+}
+
+/* @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+  
+.err2 {
+      color: var(--red);
+      font-family: "Truculenta";
+      font-size: 11rem;
+      position:absolute;
+      left: 53vw;      
+      top: 8%;
+      font-weight: 600;
+}
+  
+.msg {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    font-family: "Instrument Sans", serif;
+    font-size: 1.6rem;
+    width: 75%;
+    color: var(--blue);
+    bottom: 15%;
+}
+  
+a {
+    text-decoration: none;
+    /* color: var(--blue); */
+    font-weight: 600;
+    color: var(--blue) !important;
+}
+  
+a:hover {
+    text-decoration: underline;
+    color: var(--blue) !important;
+    /* color: var(--teal-color); */
+}
+
+.returning {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.returning:hover {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    color: var(--teal-color);
+}
+
+@media screen and (min-width: 2001px) {
+    .asterisco {
+        left: 45vw;
+        top: 20%;
+    }
+
+    .err {
+        left: 42vw;
+        top: 15%;    
+    }
+
+    .err2 {
+        top: 15%; 
+        left: 55vw;   
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .err {
+        left: 39vw;
+        top: 8%;
+
+    }
+
+    .asterisco {
+        left: 42vw;
+    }
+
+    .err2 {
+        left: 53vw;
+        top: 8%;
+
+    }
+
+}
+
+@media screen and (max-width: 1976px) {
+    .err {
+        left: 40vw;
+        top: 10%;
+    }
+
+    .asterisco {
+        left: 43vw;
+        top: 15%;
+    }
+
+    .err2 {
+        left: 53vw;      
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .err {
+        left: 40vw;
+        top: 10%;
+    }
+
+    .asterisco {
+        left: 43vw;
+        top: 15%;
+    }
+
+    .err2 {
+        left: 56vw;      
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .mainbox p {
+        font-size: 1.7rem;
+    }
+
+    .err {
+        left: 39vw;
+    }
+
+    .err2 {
+        left: 59vw;
+    }
+    
+}
+
+@media screen and (max-width: 835px) {
+    .mainbox p {
+        font-size: 1.6rem;
+    }
+
+    .err {
+        left: 35vw;
+    }
+
+    .asterisco {
+        left: 39vw;
+    }
+
+    .err2 {
+        left: 58vw;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .mainbox p {
+        font-size: 1.5rem;
+    }
+
+    .err {
+        left: 33vw;
+    }
+
+    .err2 {
+        left: 58vw;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .mainbox p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .mainbox p {
+        font-size: 1.3rem;
+    }
+
+    .asterisco {
+        left: 37vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .err {
+        left: 31vw;
+    }
+
+    .err2 {
+        left: 62vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .err {
+        left: 27vw;
+    }
+
+    .asterisco {
+        left: 34vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .err {
+        left: 17vw;
+        top: 15%;
+    }
+
+    .asterisco {
+        left: 25vw;
+        top: 20%;
+    }
+    
+    .err2 {
+        left: 60vw;
+        top: 15%;
+    }
+
+    .mainbox p {
+        font-size: 1.3rem;
+    }
+
+}
