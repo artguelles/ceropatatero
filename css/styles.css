@@ -402,7 +402,7 @@ header h1 {
 
 #header-who {
     /*background-color: var(--blue);*/
-    background-image: url(/media/img/header-pic.jpg);
+    background-image: url(/media/img/patatas-fritas-1.jpg);
     background-size: cover;
     background-color: var(--gradientblue);
     height: 30vh;
@@ -413,7 +413,7 @@ header h1 {
     position: absolute;
     height: 30vh;
     width: 100%;
-    top: 5.2em;
+    top: 5.1em;
     left: 0;
     background-color: var(--gradientblue);
     z-index: 4;
@@ -430,6 +430,68 @@ header h1 {
     color: var(--white) !important;
     font-size: 3em !important;
 }
+
+#who-are-we h3 {
+    text-align: center;
+    color: var(--white) !important;
+    /* font-size: 3em !important; */
+    /* border-bottom: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important; */
+}
+
+/* #patatas-intro {
+   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important;  
+} */
+
+#who-are-we p {
+    text-align: center;
+    color: var(--white) !important;
+    font-size: 2em;
+    font-family: "Truculenta";
+    font-weight: 700 !important;
+}
+
+#corre-h1 {
+    color: var(--red) !important;
+    text-align: center;
+    font-size: 3em !important;
+    font-family: "Truculenta";
+    font-weight: 700 !important;
+}
+
+#por-que {
+    color: var(--yellow);
+    text-align: center;
+    font-family: "Truculenta";
+    font-weight: 700 !important;
+    font-size: 3em !important;
+}
+
+.explicar {
+    color: var(--yellow) !important;
+    font-family: "Kulim Park", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#h4 {
+    text-align: center;
+    color: var(--yellow);
+    font-family: "Kulim Park", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.patata-lover {
+    /* border-top: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important;  */
+    padding-top: 1.5em; 
+    border-top: 3px solid var(--yellow);
+}
+
+/* #who-are-we img {
+    width: 100%;
+} */
 
 #secreto {
     background-color: var(--red);
@@ -451,6 +513,10 @@ header h1 {
     color: var(--yellow);
 }
 
+#resenas h2 {
+    text-align: center;
+    padding: 0.5em;
+}
 /* .subtitle {
     background-color: #244BA5;
     padding: 0.4em;
