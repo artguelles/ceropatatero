@@ -398,6 +398,65 @@ header h1 {
     display: none !important; /* Esto elimina la flecha del acordeón */
 }
 
+/* QUIENES SOMOS */
+
+#header-who {
+    /*background-color: var(--blue);*/
+    background-image: url(/media/img/header-pic.jpg);
+    background-size: cover;
+    background-color: var(--gradientblue);
+    height: 30vh;
+    width: 100%;
+}
+
+#gradient-who {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    top: 5.2em;
+    left: 0;
+    background-color: var(--gradientblue);
+    z-index: 4;
+    border-bottom: solid var(--red) 10px;
+}
+
+#who-are-we {
+    background-color: var(--blue);
+    height: 100vh;
+}
+
+#who-are-we h2 {
+    text-align: center;
+    color: var(--white) !important;
+    font-size: 3em !important;
+}
+
+#secreto {
+    background-color: var(--red);
+}
+
+#secreto h2 {
+    text-align: center;
+    font-size: 3em !important;
+    color: var(--white);
+}
+
+#secreto h3 {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+#secreto span {
+    color: var(--yellow);
+}
+
+/* .subtitle {
+    background-color: #244BA5;
+    padding: 0.4em;
+    border-radius: 20px;
+} */
+
 /* CARRUSEL */
 @media (min-width: 670px) {
     .swiper {
