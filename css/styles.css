@@ -434,13 +434,7 @@ header h1 {
 #who-are-we h3 {
     text-align: center;
     color: var(--white) !important;
-    /* font-size: 3em !important; */
-    /* border-bottom: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important; */
 }
-
-/* #patatas-intro {
-   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important;  
-} */
 
 #who-are-we p {
     text-align: center;
@@ -484,7 +478,6 @@ header h1 {
 }
 
 .patata-lover {
-    /* border-top: var(--bs-border-width) var(--bs-border-style) var(--yellow) !important;  */
     padding-top: 1.5em; 
     border-top: 3px solid var(--yellow);
 }
