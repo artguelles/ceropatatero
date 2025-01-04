@@ -422,7 +422,7 @@ header h1 {
 
 #who-are-we {
     background-color: var(--blue);
-    height: 100vh;
+    height: 165vh;
 }
 
 #who-are-we h2 {
@@ -482,9 +482,13 @@ header h1 {
     border-top: 3px solid var(--yellow);
 }
 
-/* #who-are-we img {
-    width: 100%;
-} */
+#who-are-we img {
+    border-radius: 30px;
+}
+
+#secretos-cocina {
+    height: 200vh;
+}
 
 #secreto {
     background-color: var(--red);
@@ -502,11 +506,62 @@ header h1 {
     font-size: 1.5em;
 }
 
+#secretos-cocina h3 {
+    background-color: #244BA5;
+    padding: 0.7em;
+    border-radius: 20px;
+}
+
+#secretos-cocina .container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1.5em;
+    box-shadow: black;
+}
+
+#secretos-cocina .text-review {
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+#secretos-cocina #rev-red {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+#secretos-cocina #rev-yellow {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+#secretos-cocina #rev-blue {
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+#secretos-cocina #rev-red h3 {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+#secretos-cocina #rev-yellow h3 {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#secretos-cocina #rev-blue h3 {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+/* #secretos-cocina .review {
+    margin-top: -1.5em;
+    padding: 1em;
+} */
+
 #secreto span {
     color: var(--yellow);
 }
 
-#resenas h2 {
+#creadoras h2 {
     text-align: center;
     padding: 0.5em;
 }
