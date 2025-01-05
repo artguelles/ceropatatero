@@ -826,10 +826,16 @@ header #gradient{
 footer img{
     width: 30vw; 
 }
+
 }
 
 @media screen and (min-width: 1024px){
     footer img{
         width: 20vw; 
+
 }
+    .redes{
+        justify-content: center;
+        gap: 1rem;
+    }
 }
