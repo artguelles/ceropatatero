@@ -809,6 +809,16 @@ html {
 @media screen and (max-width: 1200px){
     #mapa-div{
         height: 40vh; 
-        width: 60vh;
+        width: 80vw;
     }
+
+    .mapa-desc{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 767px){
+header #gradient{
+    height: 100vh;
+}
 }
