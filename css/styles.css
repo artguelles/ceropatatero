@@ -778,7 +778,7 @@ html {
 
 #mapa-div{
     width: 80vw;
-    height: 40vh;
+    height: 60vh;
     margin: 0 auto;
     border-width: 8px;
     border-style: solid;
@@ -805,3 +805,10 @@ html {
     height: auto;
 }
 
+/* Media queries */
+@media screen and (max-width: 1200px){
+    #mapa-div{
+        height: 40vh; 
+        width: 60vh;
+    }
+}
