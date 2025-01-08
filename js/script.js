@@ -5,6 +5,23 @@ $(document).ready(function() {
         $('#navbarNav').collapse('hide');
     });
 
+    // QUITAR CLASES BORDER TOP Y BORDER BOTTOM
+    $(document).ready(function() {
+        function updateBorders() {
+          if ($(window).width() >= 767) {
+            $(".nav-item").removeClass("border-top border-bottom");
+          } else {
+            $(".nav-item").addClass("border-top");
+          }
+        }
+        
+        updateBorders();
+    
+        $(window).resize(function() {
+          updateBorders();
+        });
+    });
+
     // CARRUSEL CON SWIPER
     $(document).ready(function () {
         var swiper = new Swiper('.swiper', {
