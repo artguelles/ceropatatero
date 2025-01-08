@@ -806,6 +806,53 @@ html {
 }
 
 /* Media queries */
+
+@media screen and (min-width: 767px){
+    header #gradient{
+        height: 100vh;
+    }
+
+    .navbar-collapse {
+        padding: 0;
+        margin: 0 -11.9px -8.8px -11.9px;
+        background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;;
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item a {
+        color: var(--blue); 
+        line-height: 1em;
+        font-size: 1.8em;
+    }
+
+    .navbar li {
+        padding: 0 1em;
+    }
+    
+    /*REMOVE CLASS W JS*/
+    .border-top {
+        border-top: var(--bs-border-width) var(--bs-border-style) none !important;
+    }
+
+    .border-bottom {
+        border-bottom: var(--bs-border-width) var(--bs-border-style) none !important;
+    }
+    
+    footer img{
+        width: 30vw; 
+    }
+    
+}
+    
+
 @media screen and (max-width: 1200px){
     #mapa-div{
         height: 40vh; 
@@ -818,18 +865,8 @@ html {
 }
 
 
-@media screen and (min-width: 767px){
-header #gradient{
-    height: 100vh;
-}
-
-footer img{
-    width: 30vw; 
-}
-
-}
-
 @media screen and (min-width: 1024px){
+
     footer img{
         width: 20vw; 
 
