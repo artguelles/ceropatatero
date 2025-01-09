@@ -362,7 +362,8 @@ header h1 {
     --bs-border-radius: 30px;
 }
 
-.acordeonRes {
+.acordeonRes,
+.acordeonRes2 {
     font-family: "Kulim Park", serif;
     font-size: 0.9em;
 }
@@ -399,6 +400,17 @@ header h1 {
 .accordion-button::after {
     display: none !important; /* Esto elimina la flecha del acordeón */
 }
+
+@media screen and (min-width: 1024px){
+    .accordion {
+        max-width: 1320px;
+    }
+
+    #resenas {
+        max-width: 1320px;
+    }
+}
+
 
 /* QUIENES SOMOS */
 
@@ -796,6 +808,10 @@ html {
     font-size: 2rem;
     color: var(--red);
     margin-top: 1rem;
+}
+
+#ubicacion .ubCont {
+    padding: 0 !important;
 }
 
 #secretos-cocina{
