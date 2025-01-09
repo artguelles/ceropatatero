@@ -701,29 +701,56 @@ header h1 {
 }
 
 /*CAROUSEL INSTRAGRAM*/
+
+#carousel-mobile,
 #carousel-ig {
     padding: 2em;
+    border-radius: 30px;
+    overflow: hidden;
+    display: block;
 }
 
 .carousel-inner {
     display: flex;
+    border-radius: 30px;
 }
 
 .carousel-item {
+    display: flex;
+    justify-content: space-between;
     flex: 0 0 auto;
-    width: 100%; 
+    width: 100%;
 }
 
-#carousel-ig h3 {
+.carousel-item .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-item .col-12,
+.carousel-item .col-md-4 {
+    padding: 0.5em;
+}
+
+.carousel-item img {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#carousel-ig h3,
+#carousel-mobile h3 {
     font-weight: 700;
     color: var(--red);
+    text-align: center;
 }
 
-#carousel-ig a {
+#carousel-ig a,
+#carousel-mobile a {
     margin-bottom: 0.5em;
 }
 
-#carousel-ig p {
+#carousel-ig p,
+#carousel-mobile p {
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -732,19 +759,26 @@ header h1 {
     background-color: var(--white) !important;
 }
 
+@media (max-width: 767px) {
+    #carousel-ig {
+        display: none;
+    }
+    #carousel-mobile {
+        display: block;
+    }
+}
+
 @media (min-width: 768px) {
-    .carousel-item {
-      width: calc(100% / 3);
+    #carousel-ig {
+        display: block;
+    }
+    #carousel-mobile {
+        display: none;
     }
 }
 
-@media (min-width: 992px) {
-    .carousel-item {
-      width: calc(100% / 3);
-    }
-}
-/**/
 
+/* FOOTER */
 footer {
     background-color: var(--blue);
     /*mientras cambiamos el color a blanco*/
@@ -845,14 +879,6 @@ html {
         margin-top: 25%;;
     }
 
-    /* #FAQ {
-        padding: 2em 10em;
-    } */
-
-    #catering {
-        
-    }
-
     .navbar-collapse {
         padding: 0;
         margin: 0 -11.9px -8.8px -11.9px;
@@ -874,10 +900,6 @@ html {
         line-height: 1em;
         font-size: 1.8em;
     }
-
-    #carousel-ig {
-        padding: 2em 12em;
-    }
     
     footer img{
         width: 30vw; 
@@ -888,6 +910,10 @@ html {
 @media screen and (min-width: 1024px){
 
     section {
+        padding: 2em 5em;
+    }
+
+    #carousel-ig {
         padding: 2em 5em;
     }
 
@@ -902,9 +928,9 @@ html {
         width: 1000px;
     }
 
-    #carousel-ig {
+    /* #carousel-ig {
         padding: 3em 20em;
-    }
+    } */
 
     footer img{
         width: 20vw; 
