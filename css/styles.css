@@ -345,11 +345,6 @@ header h1 {
 }
 
 /* FAQ */
-#FAQ {
-    padding-top: 0;
-    /*AÑADI ESTO PARA QUE NO QUEDE TANTO ESPACIO -MARIVI*/
-}
-
 .h3Faq {
     font-family: "Kulim Park", serif;
     font-weight: 700;
@@ -403,12 +398,21 @@ header h1 {
 
 @media screen and (min-width: 1024px){
     .accordion {
-        max-width: 1320px;
+        /* padding-left: 30em;
+        padding-right: 30em; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1000px;
     }
 
-    /* #resenas {
-        max-width: 1320px;
-    } */
+    #resenas {
+   
+    }
+
+    #carta .cartataBackground {
+        max-width: 5000px;
+    }
 }
 
 
@@ -706,8 +710,8 @@ header h1 {
 }
 
 .carousel-item {
-    flex: 0 0 auto; /* Prevent items from stretching */
-    width: 100%; /* Full width for smaller screens */
+    flex: 0 0 auto;
+    width: 100%; 
 }
 
 #carousel-ig h3 {
@@ -730,13 +734,13 @@ header h1 {
 
 @media (min-width: 768px) {
     .carousel-item {
-      width: calc(100% / 3); /* 3 cards visible on tablets and larger */
+      width: calc(100% / 3);
     }
 }
 
 @media (min-width: 992px) {
     .carousel-item {
-      width: calc(100% / 3); /* Keep 3 cards visible, with partial visibility of adjacent cards */
+      width: calc(100% / 3);
     }
 }
 /**/
@@ -841,13 +845,12 @@ html {
         margin-top: 25%;;
     }
 
-    #FAQ {
+    /* #FAQ {
         padding: 2em 10em;
-    }
+    } */
 
     #catering {
-        padding-left: 10em;
-        padding-right: 10em;
+        
     }
 
     .navbar-collapse {
@@ -888,13 +891,15 @@ html {
         padding: 2em 5em;
     }
 
-    #FAQ {
-        padding: 2em 7em;
-    }
-
     #catering {
-        padding-left: 15em;
-        padding-right: 15em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form.round {
+        width: 1000px;
     }
 
     #carousel-ig {
