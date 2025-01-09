@@ -9,9 +9,10 @@ $(document).ready(function() {
     $(document).ready(function() {
         function updateBorders() {
           if ($(window).width() >= 767) {
-            $(".nav-item").removeClass("border-top border-bottom");
+            $("nav .nav-item").removeClass("border-top border-bottom");
           } else {
-            $(".nav-item").addClass("border-top");
+            $("nav .nav-item").addClass("border-top");
+            $("nav .nav-item:last").addClass("border-bottom");
           }
         }
         
