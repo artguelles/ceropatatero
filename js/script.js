@@ -152,9 +152,23 @@ function handleMobileView(e) {
     }
 }
 
-// Escuchar cambios en la media query
 mediaQuery.addEventListener("change", handleMobileView);
 
-// Llamar a la función inicialmente para aplicar los cambios según el tamaño de la pantalla actual
 handleMobileView(mediaQuery);
 }
+
+// Cerrar menu al clicar icono hamburguesa
+$(document).ready(function () {
+    const $navbarToggler = $(".navbar-toggler");
+    const $navbarCollapse = $("#navbarNav");
+
+    $navbarToggler.on("click", function () {
+        $navbarCollapse.toggleClass("show");
+    });
+
+    $(".nav-link").on("click", function () {
+        if ($navbarCollapse.hasClass("show")) {
+            $navbarCollapse.removeClass("show");
+        }
+    });
+});
