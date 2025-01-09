@@ -808,6 +808,11 @@ html {
 /* Media queries */
 
 @media screen and (min-width: 767px){
+
+    section {
+        padding: 2em;
+    }
+
     header #gradient{
         height: 100vh;
     }
@@ -844,6 +849,10 @@ html {
 }
 
 @media screen and (min-width: 1024px){
+
+    section {
+        padding: 2em 5em;
+    }
 
     #carousel-ig {
         padding: 3em 20em;
