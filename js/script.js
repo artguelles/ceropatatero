@@ -96,6 +96,7 @@ $(document).ready(function() {
 // Media query que cambia el grid del html de quienes somos 
 const mediaQuery = window.matchMedia("(max-width: 767px)");
 
+if (window.location.pathname.includes("quienes-somos.html")) {
 function handleMobileView(e) {
     if (e.matches) {
         document.getElementById("patatas-intro").innerHTML = `
@@ -156,3 +157,4 @@ mediaQuery.addEventListener("change", handleMobileView);
 
 // Llamar a la función inicialmente para aplicar los cambios según el tamaño de la pantalla actual
 handleMobileView(mediaQuery);
+}

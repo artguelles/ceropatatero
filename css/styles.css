@@ -521,7 +521,7 @@ header h1 {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
     box-shadow: black;
 }
 
@@ -796,6 +796,10 @@ html {
     font-size: 2rem;
     color: var(--red);
     margin-top: 1rem;
+}
+
+#secretos-cocina{
+    margin-top: 2rem;
 }
 
 /* MARIVI (ARREGLOS DE COSAS)*/
