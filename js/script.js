@@ -92,3 +92,67 @@ $(document).ready(function() {
         }
     });
 });
+
+// Media query que cambia el grid del html de quienes somos 
+const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+function handleMobileView(e) {
+    if (e.matches) {
+        document.getElementById("patatas-intro").innerHTML = `
+               <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="/media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
+                        <p>
+                            Las patatas
+                        </p>
+                        <img src="/media/img/patatas-2.jpg" class="img-fluid" alt="Patatas fritas">
+                        <p>
+                            que te harán
+                        </p>
+                        <img src="/media/img/patatas-1-1.avif" class="img-fluid" alt="Patatas fritas">
+                        <p>
+                            chuparte los dedos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        `;
+    } else {
+        // Cambios para pantallas más grandes
+        document.getElementById("patatas-intro").innerHTML = `
+           <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <p>Las patatas</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <p>que te harán</p>
+                    </div>
+                    <div class="col">
+                        <img src="media/img/patatas-2.jpg" class="img-fluid" alt="Patatas fritas">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="media/img/patatas-1-1.avif" class="img-fluid" alt="Patatas fritas">
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <p>chuparte los dedos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+
+// Escuchar cambios en la media query
+mediaQuery.addEventListener("change", handleMobileView);
+
+// Llamar a la función inicialmente para aplicar los cambios según el tamaño de la pantalla actual
+handleMobileView(mediaQuery);
