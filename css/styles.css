@@ -422,7 +422,8 @@ header h1 {
 
 #who-are-we {
     background-color: var(--blue);
-    height: 165vh;
+    /*height: 165vh;*/
+    padding-bottom: 5em;
 }
 
 #who-are-we h2 {
@@ -480,18 +481,20 @@ header h1 {
 .patata-lover {
     padding-top: 1.5em; 
     border-top: 3px solid var(--yellow);
+    margin-top: 3em;
 }
 
 #who-are-we img {
     border-radius: 30px;
 }
 
-#secretos-cocina {
+/*#secretos-cocina {
     height: 200vh;
-}
+}*/
 
 #secreto {
     background-color: var(--red);
+    padding: 6em 2em;
 }
 
 #secreto h2 {
@@ -509,7 +512,7 @@ header h1 {
 #secretos-cocina h3 {
     background-color: #244BA5;
     padding: 0.7em;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 #secretos-cocina .container {
@@ -565,11 +568,6 @@ header h1 {
     text-align: center;
     padding: 0.5em;
 }
-/* .subtitle {
-    background-color: #244BA5;
-    padding: 0.4em;
-    border-radius: 20px;
-} */
 
 /* CARRUSEL */
 @media (min-width: 670px) {
