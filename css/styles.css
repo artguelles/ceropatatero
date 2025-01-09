@@ -817,6 +817,15 @@ html {
         height: 100vh;
     }
 
+    #FAQ {
+        padding: 2em 10em;
+    }
+
+    #catering {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
     .navbar-collapse {
         padding: 0;
         margin: 0 -11.9px -8.8px -11.9px;
@@ -854,6 +863,15 @@ html {
         padding: 2em 5em;
     }
 
+    #FAQ {
+        padding: 2em 7em;
+    }
+
+    #catering {
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
     #carousel-ig {
         padding: 3em 20em;
     }
@@ -870,16 +888,18 @@ html {
     
 
 @media screen and (max-width: 1200px){
+
+    
+
     #mapa-div{
         height: 40vh; 
-        width: 80vw;
+        width: 100%;
     }
 
     .mapa-desc{
         font-size: 1rem;
     }
-
-    
+ 
 }
 
 
