@@ -189,6 +189,7 @@ header h1 {
     margin-top: 2em;
     border-radius: 25px !important;
     padding-bottom: 4em;
+    max-width: none;
 }
 
 #carta .card-background {
@@ -355,6 +356,7 @@ header h1 {
 
 .accordion {
     --bs-border-radius: 30px;
+    width: 1000px;
 }
 
 .acordeonRes,
@@ -396,25 +398,6 @@ header h1 {
     display: none !important; /* Esto elimina la flecha del acordeón */
 }
 
-@media screen and (min-width: 1024px){
-    .accordion {
-        /* padding-left: 30em;
-        padding-right: 30em; */
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 1000px;
-    }
-
-    #resenas {
-   
-    }
-
-    #carta .cartataBackground {
-        max-width: 5000px;
-    }
-}
-
 
 /* QUIENES SOMOS */
 
@@ -448,6 +431,8 @@ header h1 {
     text-align: center;
     color: var(--white) !important;
     font-size: 3em !important;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 #who-are-we h3 {
@@ -543,7 +528,7 @@ header h1 {
 
 #secretos-cocina .text-review {
     padding: 1em;
-    margin-top: 0.5em;
+    margin-top: 2em;
 }
 
 #secretos-cocina #rev-red {
@@ -571,6 +556,10 @@ header h1 {
 #secretos-cocina #rev-blue h3 {
     background-color: var(--red);
     color: var(--yellow);
+}
+
+#secretos-cocina .caracteristicas {
+    min-height: 250px; 
 }
 
 /* #secretos-cocina .review {
@@ -610,6 +599,10 @@ header h1 {
     padding: 1em;
     padding-top: 2em;
     margin-top: -1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px; 
 }
 
 .review h3 {
@@ -666,6 +659,12 @@ header h1 {
 
 #rev-blue div:last-child a {
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .review {
+        min-height: 350px; 
+    }
 }
 
 #catering form {
@@ -827,7 +826,8 @@ html {
 }
 
 #mapa-div{
-    width: 80vw;
+    /* width: 80vw; */
+    max-width: 1000px;
     height: 60vh;
     margin: 0 auto;
     border-width: 8px;
@@ -846,6 +846,10 @@ html {
     font-size: 2rem;
     color: var(--red);
     margin-top: 1rem;
+}
+
+#ubicacion .container {
+    max-width: none;
 }
 
 #ubicacion .ubCont {
@@ -878,7 +882,7 @@ html {
     header h1 {
         margin-top: 25%;;
     }
-
+    
     .navbar-collapse {
         padding: 0;
         margin: 0 -11.9px -8.8px -11.9px;
@@ -892,7 +896,7 @@ html {
         display: flex !important;
         flex-basis: auto;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: right;
     }
 
     .navbar .navbar-collapse .navbar-nav .nav-item a {
@@ -944,9 +948,6 @@ html {
     
 
 @media screen and (max-width: 1200px){
-
-    
-
     #mapa-div{
         height: 40vh; 
         width: 100%;
