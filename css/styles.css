@@ -815,7 +815,7 @@ html {
     .navbar-collapse {
         padding: 0;
         margin: 0 -11.9px -8.8px -11.9px;
-        background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;;
+        background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
         width: 100%;
         position: relative;
     }
@@ -833,23 +833,30 @@ html {
         font-size: 1.8em;
     }
 
-    .navbar li {
-        padding: 0 1em;
-    }
-    
-    /*REMOVE CLASS W JS*/
-    .border-top {
-        border-top: var(--bs-border-width) var(--bs-border-style) none !important;
-    }
-
-    .border-bottom {
-        border-bottom: var(--bs-border-width) var(--bs-border-style) none !important;
+    #carousel-ig {
+        padding: 2em 12em;
     }
     
     footer img{
         width: 30vw; 
     }
     
+}
+
+@media screen and (min-width: 1024px){
+
+    #carousel-ig {
+        padding: 3em 20em;
+    }
+
+    footer img{
+        width: 20vw; 
+
+}
+    .redes{
+        justify-content: center;
+        gap: 1rem;
+    }
 }
     
 
@@ -862,17 +869,8 @@ html {
     .mapa-desc{
         font-size: 1rem;
     }
+
+    
 }
 
 
-@media screen and (min-width: 1024px){
-
-    footer img{
-        width: 20vw; 
-
-}
-    .redes{
-        justify-content: center;
-        gap: 1rem;
-    }
-}
