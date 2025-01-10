@@ -5,62 +5,6 @@ $(document).ready(function() {
         $('#navbarNav').collapse('hide');
     });
 
-    // QUITAR CLASES BORDER TOP Y BORDER BOTTOM
-    function updateBorders() {
-        if ($(window).width() >= 767) {
-        $("nav .nav-item").removeClass("border-top border-bottom");
-        } else {
-        $("nav .nav-item").addClass("border-top");
-        $("nav .nav-item:last").addClass("border-bottom");
-        }
-    }
-    
-    updateBorders();
-
-    $(window).resize(function() {
-        updateBorders();
-    });
-
-    // CARRUSEL CON SWIPER
-    var swiper = new Swiper('.swiper', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        mousewheel: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        on: {
-            slideChangeTransitionStart: function () {
-                $('.swiper-slide').removeClass('swiper-slide-active');
-                var activeIndex = swiper.activeIndex;
-                var activeSlide = swiper.slides[activeIndex];
-                $(activeSlide).addClass('swiper-slide-active');
-            }
-        }
-    });
-
-    // VALIDAR FORM
-    $(".formularioCatering").on("submit", function (e) {
-        e.preventDefault();
-
-        var form = $("#cateringValidation")[0];
-        var isValid = form.checkValidity();
-
-        if (isValid) {
-            $('#reservationModal').modal('show');
-        } else {
-            form.classList.add('was-validated');
-        }
-    });
-
-    // CERRAR MENÚ - IRENE
     const $navbarToggler = $(".navbar-toggler");
     const $navbarCollapse = $("#navbarNav");
 
@@ -73,6 +17,25 @@ $(document).ready(function() {
             $navbarCollapse.removeClass("show");
         }
     });
+
+    // QUITAR CLASES BORDER TOP Y BORDER BOTTOM
+    $(document).ready(function() {
+        function updateBorders() {
+          if ($(window).width() >= 767) {
+            $("nav .nav-item").removeClass("border-top border-bottom");
+          } else {
+            $("nav .nav-item").addClass("border-top");
+            $("nav .nav-item:last").addClass("border-bottom");
+          }
+        }
+        
+        updateBorders();
+    
+        $(window).resize(function() {
+          updateBorders();
+        });
+    });
+
 });
 
 // Media query que cambia el grid del html de quienes somos 
@@ -82,7 +45,7 @@ if (window.location.pathname.includes("quienes-somos.html")) {
 function handleMobileView(e) {
     if (e.matches) {
         document.getElementById("patatas-intro").innerHTML = `
-            <div class="container-fluid">
+               <div class="container-fluid">
                 <div class="row">
                     <div class="col">
                         <img src="/media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
@@ -104,7 +67,7 @@ function handleMobileView(e) {
     } else {
         // Cambios para pantallas más grandes
         document.getElementById("patatas-intro").innerHTML = `
-        <div class="container-fluid">
+           <div class="container-fluid">
                 <div class="row">
                     <div class="col">
                         <img src="media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
