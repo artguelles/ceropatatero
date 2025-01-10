@@ -395,7 +395,7 @@ header h1 {
 }
 
 .accordion-button::after {
-    display: none !important; /* Esto elimina la flecha del acordeón */
+    display: none !important;
 }
 
 
@@ -675,6 +675,10 @@ header h1 {
     font-size: 0.9em;
 }
 
+#catering .tituloCatering {
+    margin-bottom: 1rem;
+}
+
 #catering form h3 {
     font-size: 1.2em;
     font-weight: 900;
@@ -932,10 +936,6 @@ html {
         width: 1000px;
     }
 
-    /* #carousel-ig {
-        padding: 3em 20em;
-    } */
-
     footer img{
         width: 20vw; 
 
@@ -958,5 +958,3 @@ html {
     }
  
 }
-
-
