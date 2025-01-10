@@ -48,15 +48,15 @@ function handleMobileView(e) {
                <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <img src="/media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
+                        <img src="media/img/patatas-3.webp" class="img-fluid" alt="Patatas fritas">
                         <p>
                             Las patatas
                         </p>
-                        <img src="/media/img/patatas-2.jpg" class="img-fluid" alt="Patatas fritas">
+                        <img src="media/img/patatas-2.jpg" class="img-fluid" alt="Patatas fritas">
                         <p>
                             que te harán
                         </p>
-                        <img src="/media/img/patatas-1-1.avif" class="img-fluid" alt="Patatas fritas">
+                        <img src="media/img/patatas-1-1.avif" class="img-fluid" alt="Patatas fritas">
                         <p>
                             chuparte los dedos
                         </p>
