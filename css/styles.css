@@ -44,12 +44,23 @@ section, header, footer {
 
 /*SI NO FUNCIONA BORRAR DIRECTAMENTE*/
 .navbar-collapse {
-    padding: 8.3em 0;
-    margin: 0 -11.9px -8.8px -11.9px;;
     background-color: var(--red);
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 -11.9px -8.8px -11.9px;
     position: relative;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item a {
@@ -901,6 +912,7 @@ html {
         flex-basis: auto;
         flex-direction: row;
         justify-content: right;
+        padding-right: 2rem;
     }
 
     .navbar .navbar-collapse .navbar-nav .nav-item a {
