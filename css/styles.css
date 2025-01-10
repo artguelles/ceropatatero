@@ -864,6 +864,17 @@ html {
     margin-top: 2rem;
 }
 
+.nav-item:hover{
+    text-shadow: 2px 4px 2px gainsboro;
+}
+
+footer .nav-item:hover{
+    text-shadow: 2px 4px 2px rgb(7, 14, 84);
+}
+
+.btn-primary:hover{
+    background-color: #7f1e17 !important;
+}
 /* MARIVI (ARREGLOS DE COSAS)*/
 
 #model-div {
@@ -956,5 +967,12 @@ html {
     .mapa-desc{
         font-size: 1rem;
     }
+ 
+}
+
+@media screen and (max-width: 767px){
+.nav-item:hover{
+    text-shadow: 2px 4px 2px #145BD5;
+}
  
 }
