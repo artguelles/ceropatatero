@@ -98,7 +98,7 @@ a.nav-link {
 
 header {
     /*background-color: var(--blue);*/
-    background-image: url(/media/img/header.jpg);
+    background-image: url(../media/img/header.jpg);
     background-size: cover;
     background-color: var(--gradientblue);
     height: 100vh;
@@ -414,7 +414,7 @@ header h1 {
 
 #header-who {
     /*background-color: var(--blue);*/
-    background-image: url(/media/img/patatas-fritas-1.jpg);
+    background-image: url(../media/img/patatas-fritas-1.jpg);
     background-size: cover;
     background-color: var(--gradientblue);
     height: 30vh;
