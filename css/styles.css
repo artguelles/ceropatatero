@@ -879,6 +879,10 @@ html {
     text-shadow: 2px 2px 2px #CEC7B6;
 }
 
+.btn-primary:hover{
+    background-color: #923a33 !important;
+}
+
 /* MARIVI (ARREGLOS DE COSAS)*/
 
 #model-div {
