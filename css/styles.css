@@ -703,57 +703,30 @@ header h1 {
     --bs-btn-disabled-border-color: var(--red) !important;
 }
 
-/*CAROUSEL INSTRAGRAM*/
-
-#carousel-mobile,
+/* /CAROUSEL INSTRAGRAM/ */
 #carousel-ig {
     padding: 2em;
-    border-radius: 30px;
-    overflow: hidden;
-    display: block;
 }
 
 .carousel-inner {
     display: flex;
-    border-radius: 30px;
 }
 
 .carousel-item {
-    display: flex;
-    justify-content: space-between;
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 auto; /* Prevent items from stretching /
+    width: 100%; / Full width for smaller screens */
 }
 
-.carousel-item .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel-item .col-12,
-.carousel-item .col-md-4 {
-    padding: 0.5em;
-}
-
-.carousel-item img {
-    border-radius: 30px;
-    object-fit: cover;
-}
-
-#carousel-ig h3,
-#carousel-mobile h3 {
+#carousel-ig h3 {
     font-weight: 700;
     color: var(--red);
-    text-align: center;
 }
 
-#carousel-ig a,
-#carousel-mobile a {
+#carousel-ig a {
     margin-bottom: 0.5em;
 }
 
-#carousel-ig p,
-#carousel-mobile p {
+#carousel-ig p {
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -764,19 +737,19 @@ header h1 {
 
 @media (max-width: 767px) {
     #carousel-ig {
-        display: none;
-    }
-    #carousel-mobile {
-        display: block;
+        padding: 2em 12em;
     }
 }
 
 @media (min-width: 768px) {
-    #carousel-ig {
-        display: block;
+    .carousel-item {
+      width: calc(100% / 3);
     }
-    #carousel-mobile {
-        display: none;
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+      width: calc(100% / 3); 
     }
 }
 
@@ -936,7 +909,7 @@ footer .nav-item:hover{
     }
 
     #carousel-ig {
-        padding: 2em 5em;
+        padding: 3em 20em;
     }
 
     #catering {
@@ -978,4 +951,10 @@ footer .nav-item:hover{
     text-shadow: 2px 4px 2px #145BD5;
 }
  
+}
+
+@media screen and (max-width: 1024px) {
+    #carousel-ig {
+        padding: 3em 20em;
+    }
 }
